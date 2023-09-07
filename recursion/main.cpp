@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include "ArgumentManager.h"
+
 using namespace std;
 
 vector<int>reArrangeVectorElements(vector<int> &numbers, int y) {
@@ -35,10 +35,10 @@ vector<int>maxNum(vector<int> &numbers, int x) {
     
     }
 
-int main(int argc, char* argv[]) {
-    ArgumentManager am(argc, argv);
-    ifstream input(am.get("input"));
-    ofstream output(am.get("output"));
+int main() {
+
+    ifstream input("input3.txt");
+    ofstream output("output.txt");
     int inputNum;
     vector<int> numbers;
     while (input >> inputNum) {
